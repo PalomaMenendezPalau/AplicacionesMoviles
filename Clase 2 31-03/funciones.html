@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>6. Funciones</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      /*
+      for (var i = 0; i < 10; i++) {
+        printGreaterOrLess();
+      }
+
+      // esto es una funcion RIGIDA
+      function printGreaterOrLess() {
+        // si yo no llamo a la funcion no retorna nada el navegador
+        var randomNum = Math.random();
+
+        if (randomNum < 0.5) {
+          console.log(`${i} ${randomNum}, "is less than 0.5"`);
+        } else {
+          console.log(`${i} ${randomNum}, "is greater tan 0.5"`);
+        }
+      }
+        */
+      /////////////////// opcion 2 y mejor
+      for (var i = 0; i < 10; i++) {
+        var result = getResult();
+        console.log(result);
+      }
+
+      // esto es una funcion RIGIDA
+      function getResult() {
+        // si yo no llamo a la funcion no retorna nada el navegador
+        var randomNum = Math.random();
+
+        if (randomNum < 0.5) {
+          return `${i} ${randomNum}, "is less than 0.5"`;
+        } else {
+          return `${i} ${randomNum}, "is greater tan 0.5"`;
+        }
+      }
+    </script>
+  </body>
+</html>

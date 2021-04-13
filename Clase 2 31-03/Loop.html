@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>5. LOop</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      /*
+        for (1,2,3)
+        1 -> lo que se va a ejecutar al principio
+        2 -> la condicion que permite que el loop siga
+        3 -> lo que se vaa ejecutar al final de cada vuelta
+
+      */
+
+      ///comienza for
+      for (var i = 0; i < 10; i++) {
+        var randomNum = Math.random();
+
+        if (randomNum < 0.5) {
+          console.log(`${i} ${randomNum}, "is less than 0.5"`);
+        } else {
+          console.log(`${i} ${randomNum}, "is greater tan 0.5"`);
+        }
+      }
+      // fin for
+
+      //comienza while
+      var x = 1;
+      while (x < 100) {
+        console.log(x);
+        x = x + 1;
+      }
+    </script>
+  </body>
+</html>

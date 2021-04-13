@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width," />
+    <title>2. tipos</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var a;
+      a = 6;
+      var b = a + "6"; // cuidado con esto SE ESTA GENERANDO CONVERSION IMPLICITA, para poder imprimir concatena todo haciendo tipo de variable string
+
+      console.log(b);
+      console.log(typeof b);
+
+      var c = a + Number("6"); // convertir un string a number y ahi va a imprimir ok
+      console.log(c);
+      console.log(typeof c);
+    </script>
+  </body>
+</html>
